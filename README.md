@@ -1,10 +1,10 @@
 # Surge.conf
-# 规则配置仅供参考，适用于 Surge iOS & Mac；
-# 包含 Reject 规则，用于拦截广告、行为分析、数据统计
-# 屏蔽部分运营商劫持网页弹出流量统计
-# 部分特性可能仅适用于最新的 TestFlight 版本
-# 参数说明 zhHans.conf.ini http://bit.ly/29kwXlZ
-# https://gist.githubusercontent.com/scomper/915b04a974f9e11952babfd0bbb241a8/raw/surge.conf
+###### 规则配置仅供参考，适用于 Surge iOS & Mac；
+###### 包含 Reject 规则，用于拦截广告、行为分析、数据统计
+###### 屏蔽部分运营商劫持网页弹出流量统计
+###### 部分特性可能仅适用于最新的 TestFlight 版本
+###### 参数说明 zhHans.conf.ini http://bit.ly/29kwXlZ
+###### https://gist.githubusercontent.com/scomper/915b04a974f9e11952babfd0bbb241a8/raw/surge.conf
 
 [General]
 # warning, notify, info, verbose
