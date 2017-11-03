@@ -7,7 +7,7 @@
 ###### https://gist.githubusercontent.com/scomper/915b04a974f9e11952babfd0bbb241a8/raw/surge.conf
 
 [General]
-# warning, notify, info, verbose
+###### warning, notify, info, verbose
 loglevel = notify
 dns-server = system, 114.114.114.114, 223.5.5.5
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 193.168.0.0/24, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10,localhost,*.local
@@ -18,10 +18,10 @@ socks-port = 8889
 external-controller-access = password@0.0.0.0:6170
 allow-wifi-access = true
 
-# For iOS
+###### For iOS
 bypass-system = true
 
-# For macOS
+###### For macOS
 interface = 0.0.0.0
 socks-interface = 0.0.0.0
 exclude-simple-hostnames = true
@@ -50,10 +50,10 @@ PROCESS-NAME,Telegram,Proxy
 PROCESS-NAME,Tweetbot,Proxy
 PROCESS-NAME,Twitter,Proxy
 PROCESS-NAME,Backup and Sync,Proxy
-# Exception
+###### Exception
 DOMAIN-SUFFIX,appsto.re,Proxy
 DOMAIN-SUFFIX,apps.mzstatic.com,Proxy
-# UA & URL-REGEX
+###### UA & URL-REGEX
 USER-AGENT,AMAP_SDK*,nProxy
 USER-AGENT,WeChat*,nProxy
 USER-AGENT,MicroMessenger*,nProxy
@@ -89,12 +89,12 @@ USER-AGENT,swcd*,Proxy
 USER-AGENT,trustd*,Proxy
 USER-AGENT,BaiduWallet*,REJECT
 USER-AGENT,IphoneCom*,REJECT
-# Prior
+###### Prior
 DOMAIN-SUFFIX,alphassl.com,nProxy
 DOMAIN-SUFFIX,edu.cn,nProxy
 DOMAIN-SUFFIX,scomper.me,Proxy
-# Apple
-# Bypass System for macOS
+###### Apple
+###### Bypass System for macOS
 DOMAIN,support.apple.com,nProxy
 DOMAIN,smp-device-content.apple.com,nProxy
 DOMAIN,osxapps.itunes.apple.com,nProxy
@@ -129,7 +129,7 @@ DOMAIN-SUFFIX,icloud.com,Proxy
 DOMAIN-SUFFIX,itunes.apple.com,Proxy
 DOMAIN-SUFFIX,itunes.com,Proxy
 DOMAIN-SUFFIX,me.com,Proxy
-# AD Block KEYWORD
+###### AD Block KEYWORD
 DOMAIN-KEYWORD,admarvel,REJECT
 DOMAIN-KEYWORD,admaster,REJECT
 DOMAIN-KEYWORD,adsage,REJECT
@@ -152,7 +152,7 @@ DOMAIN-KEYWORD,umeng,REJECT
 DOMAIN-KEYWORD,usage,REJECT
 DOMAIN-KEYWORD,wlmonitor,REJECT
 DOMAIN-KEYWORD,zjtoolbar,REJECT
-# Baidu
+###### Baidu
 DOMAIN-SUFFIX,a.baidu.com,REJECT
 DOMAIN-SUFFIX,adm.baidu.com,REJECT
 DOMAIN-SUFFIX,api.youqian.baidu.com,REJECT
@@ -234,7 +234,7 @@ DOMAIN-SUFFIX,strip.taobaocdn.com,REJECT
 DOMAIN-SUFFIX,tns.simba.taobao.com,REJECT
 DOMAIN-SUFFIX,userimg.qunar.com,REJECT
 DOMAIN-SUFFIX,yiliao.hupan.com,REJECT
-#mp4ba
+######mp4ba
 DOMAIN-SUFFIX,avavf.club,REJECT
 DOMAIN-SUFFIX,fd7c.com,REJECT
 DOMAIN-SUFFIX,youle55.com,REJECT
@@ -244,7 +244,7 @@ DOMAIN-SUFFIX,twcczhu.com,REJECT
 DOMAIN-SUFFIX,he2d.com,REJECT
 DOMAIN-SUFFIX,37wan.cn,REJECT
 DOMAIN-SUFFIX,shentus.com,REJECT
-# sina
+###### sina
 DOMAIN-SUFFIX,ad.sina.com.cn,REJECT
 DOMAIN-SUFFIX,adm.leju.sina.com.cn,REJECT
 DOMAIN-SUFFIX,atm.sina.com,REJECT
@@ -258,7 +258,7 @@ DOMAIN-SUFFIX,sax.sina.cn,REJECT
 DOMAIN-SUFFIX,sax.sina.com.cn,REJECT
 DOMAIN-SUFFIX,tjs.sjs.sinajs.cn,REJECT
 DOMAIN-SUFFIX,wax.weibo.com,REJECT
-# QQ
+###### QQ
 DOMAIN-SUFFIX,act.qq.com,REJECT
 DOMAIN-SUFFIX,adsfile.qq.com,REJECT
 DOMAIN-SUFFIX,beacon.qq.com,REJECT
@@ -275,7 +275,7 @@ DOMAIN-SUFFIX,report.qq.com,REJECT
 DOMAIN-SUFFIX,tajs.qq.com,REJECT
 DOMAIN-SUFFIX,tcss.qq.com,REJECT
 DOMAIN-SUFFIX,up-hl.3g.qq.com,REJECT
-# 360
+###### 360
 DOMAIN-SUFFIX,3600.com,REJECT
 DOMAIN-SUFFIX,dev.tg.wan.360.cn,REJECT
 DOMAIN-SUFFIX,kuaikan.netmon.360safe.com,REJECT
@@ -288,7 +288,7 @@ DOMAIN-SUFFIX,stat.m.360.cn,REJECT
 DOMAIN-SUFFIX,update.360safe.com,REJECT
 DOMAIN-SUFFIX,adapi.shouji.360.cn,REJECT
 DOMAIN-SUFFIX,huodong.ios.shouji.360.cn,REJECT
-# 163
+###### 163
 DOMAIN-SUFFIX,adgeo.163.com,REJECT
 DOMAIN-SUFFIX,bobo.163.com,REJECT
 DOMAIN-SUFFIX,fa.163.com,REJECT
@@ -304,7 +304,7 @@ DOMAIN-SUFFIX,prom.gome.com.cn,REJECT
 DOMAIN-SUFFIX,rlogs.youdao.com,REJECT
 DOMAIN-SUFFIX,static.flv.uuzuonline.com,REJECT
 DOMAIN-SUFFIX,wanproxy.127.net,REJECT
-# Ads in Video apps
+###### Ads in Video apps
 DOMAIN-SUFFIX,ad.api.3g.tudou.com,REJECT
 DOMAIN-SUFFIX,ad.api.3g.youku.com,REJECT
 DOMAIN-SUFFIX,ad.api.mobile.youku.com,REJECT
@@ -370,7 +370,7 @@ DOMAIN-SUFFIX,x.da.hunantv.com,REJECT
 DOMAIN-SUFFIX,hub5btmain.sandai.net,REJECT
 DOMAIN-SUFFIX,hub5emu.sandai.net,REJECT
 DOMAIN-SUFFIX,upgrade.xl9.xunlei.com,REJECT
-#AD Block
+#####AD Block
 DOMAIN-SUFFIX,10up.com,REJECT
 DOMAIN-SUFFIX,111cn.net,REJECT
 DOMAIN-SUFFIX,114la.com,REJECT
@@ -718,9 +718,9 @@ DOMAIN-SUFFIX,zhuanfakong.com,REJECT
 DOMAIN-SUFFIX,zzsx8.com,REJECT
 DOMAIN-SUFFIX,appadhoc.com,REJECT
 DOMAIN-SUFFIX,disqusads.com,REJECT
-# Accelerate .cn sites
+###### Accelerate .cn sites
 DOMAIN-SUFFIX,cn,nProxy
-# Force some domains which are fucked by GFW while resolving DNS
+###### Force some domains which are fucked by GFW while resolving DNS
 DOMAIN-SUFFIX,appspot.com,Proxy,force-remote-dns
 DOMAIN-SUFFIX,cdninstagram.com,Proxy,force-remote-dns
 DOMAIN-SUFFIX,facebook.com,Proxy,force-remote-dns
@@ -740,7 +740,7 @@ DOMAIN-SUFFIX,whatsapp.net,Proxy,force-remote-dns
 DOMAIN-SUFFIX,youtube-nocookie.com,Proxy
 DOMAIN-SUFFIX,youtube.com,Proxy,force-remote-dns
 DOMAIN-KEYWORD,google,Proxy,force-remote-dns
-# Accelerate direct sites
+###### Accelerate direct sites
 DOMAIN-KEYWORD,-cn,nProxy
 DOMAIN-SUFFIX,126.net,nProxy
 DOMAIN-SUFFIX,163.com,nProxy
@@ -920,7 +920,7 @@ DOMAIN-SUFFIX,zealer.com,nProxy
 DOMAIN-SUFFIX,zgslb.net,nProxy
 DOMAIN-SUFFIX,zhihu.com,nProxy
 DOMAIN-SUFFIX,zhimg.com,nProxy
-# Sony
+###### Sony
 DOMAIN-SUFFIX,playstation.com,nProxy
 DOMAIN-SUFFIX,playstation.com.hk,nProxy
 DOMAIN-SUFFIX,playstation.net,nProxy
@@ -929,7 +929,7 @@ DOMAIN-SUFFIX,sony.com,nProxy
 DOMAIN-SUFFIX,sony.com.hk,nProxy
 DOMAIN-SUFFIX,sony.net,nProxy
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com,nProxy
-# MytvSUPER & Netflix
+###### MytvSUPER & Netflix
 DOMAIN-KEYWORD,nowtv100,nProxy
 DOMAIN-KEYWORD,rthklive,nProxy
 DOMAIN-SUFFIX,netflix.com,nProxy
@@ -940,7 +940,7 @@ DOMAIN-SUFFIX,nflximg.net,nProxy
 DOMAIN-SUFFIX,nflxvideo.net,nProxy
 DOMAIN-SUFFIX,tvb.com,nProxy
 DOMAIN-SUFFIX,mytvsuper.com,nProxy
-# Top blocked sites
+###### Top blocked sites
 DOMAIN-SUFFIX,2o7.net,Proxy
 DOMAIN-SUFFIX,4sqi.net,Proxy
 DOMAIN-SUFFIX,9to5mac.com,Proxy
@@ -1259,30 +1259,30 @@ DOMAIN-SUFFIX,ying.com,Proxy
 DOMAIN-SUFFIX,youtu.be,Proxy
 DOMAIN-SUFFIX,yoyo.org,Proxy
 DOMAIN-SUFFIX,ytimg.com,Proxy
-# Beijing Mobile Float
+###### Beijing Mobile Float
 IP-CIDR,221.179.140.145/32,REJECT,no-resolve
 IP-CIDR,221.179.131.72/32,REJECT,no-resolve
-# Beijing Unicom Float
+###### Beijing Unicom Float
 IP-CIDR,114.247.28.96/32,REJECT,no-resolve
-# ShangHai Unicom Float
+###### ShangHai Unicom Float
 IP-CIDR,220.196.52.141/32,REJECT,no-resolve
-# Jiangsu Telecom Float
+###### Jiangsu Telecom Float
 IP-CIDR,221.228.17.152/32,REJECT,no-resolve
-# WuHan Telecom Float
+###### WuHan Telecom Float
 IP-CIDR,111.175.220.160/29,REJECT,no-resolve
-# Wuhan Unicom Float
+###### Wuhan Unicom Float
 IP-CIDR,113.57.230.88/32,REJECT,no-resolve
-# HangZhou Unicom Float
+###### HangZhou Unicom Float
 IP-CIDR,119.4.249.166/32,REJECT,no-resolve
 IP-CIDR,124.160.194.11/32,REJECT,no-resolve
-# HangZhou Telecom Float
+###### HangZhou Telecom Float
 IP-CIDR,61.160.200.252/32,REJECT,no-resolve
 IP-CIDR,218.93.127.0/24,REJECT,no-resolve
-# Shanghai guang sheng
+###### Shanghai guang sheng
 IP-CIDR,221.228.214.101/32,REJECT,no-resolve
-# Shenzhen Unicom Float
+###### Shenzhen Unicom Float
 IP-CIDR,120.80.57.123/32,REJECT,no-resolve
-# Hefei Telecom Float
+###### Hefei Telecom Float
 IP-CIDR,61.132.216.232/32,REJECT,no-resolve
 IP-CIDR,61.132.221.146/32,REJECT,no-resolve
 IP-CIDR,61.132.255.212/32,REJECT,no-resolve
@@ -1290,18 +1290,18 @@ IP-CIDR,61.132.255.222/32,REJECT,no-resolve
 IP-CIDR,61.132.255.232/32,REJECT,no-resolve
 IP-CIDR,61.191.12.74/32,REJECT,no-resolve
 IP-CIDR,61.191.206.4/32,REJECT,no-resolve
-# Zhejiang Telecom Float
+###### Zhejiang Telecom Float
 IP-CIDR,60.191.124.196/32,REJECT,no-resolve
 IP-CIDR,61.174.50.167/32,REJECT,no-resolve
 IP-CIDR,61.160.200.242/32,REJECT,no-resolve
-# Heilongjiang Unicom Float
+###### Heilongjiang Unicom Float
 IP-CIDR,221.212.180.31/32,REJECT,no-resolve
-# Telegram
+###### Telegram
 IP-CIDR,91.108.56.0/22,Proxy,no-resolve
 IP-CIDR,91.108.4.0/22,Proxy,no-resolve
 IP-CIDR,109.239.140.0/24,Proxy,no-resolve
 IP-CIDR,149.154.160.0/20,Proxy,no-resolve
-# LAN
+###### LAN
 IP-CIDR,192.168.0.0/16,DIRECT
 IP-CIDR,10.0.0.0/8,DIRECT
 IP-CIDR,172.16.0.0/12,DIRECT
@@ -1334,7 +1334,3 @@ thisisinsider.com = server:8.8.4.4
 
 [SSID Setting]
 "Apple Store" suspend=true
-全部
-拖拽至此处以完成收集
-待分类
-私密
